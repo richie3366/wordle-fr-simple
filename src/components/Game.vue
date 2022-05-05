@@ -591,7 +591,7 @@ export default {
 
             let word
             for (let i = 0; i <= wordNum; i++) {
-                const seed = seedrandom(`group-${groupNum}/word-${wordNum}`);
+                const seed = seedrandom(`group-${groupNum}/word-${i}`);
                 word = wcopy.splice(Math.floor(seed() * wcopy.length), 1)[0]
             }
 
